@@ -124,6 +124,11 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     @Override
+    public String getCurrentUser() {
+        return "";
+    }
+
+    @Override
     public void changePassword(User user) {
         final OkHttpClient client = new OkHttpClient().newBuilder()
                                         .build();

@@ -102,6 +102,11 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     @Override
+    public String getCurrentUser() {
+        return "";
+    }
+
+    @Override
     public void changePassword(User user) {
         // Replace the User object in the map
         accounts.put(user.getName(), user);

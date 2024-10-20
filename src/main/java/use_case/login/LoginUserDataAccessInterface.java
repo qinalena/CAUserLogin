@@ -29,7 +29,13 @@ public interface LoginUserDataAccessInterface {
 
     /**
      * Keeps track of the user that is logged in.
-     * @param name the username
+     * @param name the username of the current user
      */
     void setCurrentUser(String name);
+
+    /**
+     * Returns the current user.
+     * @return the username of the current user
+     */
+    String getCurrentUser();
 }
