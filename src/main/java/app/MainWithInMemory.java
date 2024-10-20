@@ -48,7 +48,7 @@ public class MainWithInMemory {
         final LoginViewModel loginViewModel = new LoginViewModel();
         final LoggedInViewModel loggedInViewModel = new LoggedInViewModel();
         final SignupViewModel signupViewModel = new SignupViewModel();
-        
+
         final InMemoryUserDataAccessObject userDataAccessObject = new InMemoryUserDataAccessObject();
 
         final SignupView signupView = SignupUseCaseFactory.create(viewManagerModel, loginViewModel,
